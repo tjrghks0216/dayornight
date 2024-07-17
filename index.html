@@ -67,11 +67,11 @@
 
       window.addEventListener("load", function () {
         const today = new Date().toISOString().split("T")[0];
+        const selectedDate = (document.getElementById("selected_date").value =
+          today);
         document.getElementById(
           "result"
-        ).innerHTML = `<h2>오늘 ${today} 은 ${isDayOrNight(
-          today
-        )}입니다.</h2>`;
+        ).innerHTML = `<h2>오늘 ${today} 은 ${isDayOrNight(today)}입니다.</h2>`;
       });
     </script>
   </body>
