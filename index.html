@@ -62,11 +62,6 @@
             resultDiv.innerHTML = `<h2>${selectedDate} 은 ${isDayOrNight(
               selectedDate
             )}입니다.</h2>`;
-          } else {
-            const today = new Date().toISOString().split("T")[0];
-            resultDiv.innerHTML = `<h2>오늘 ${today} 은 ${isDayOrNight(
-              today
-            )}입니다.</h2>`;
           }
         });
 
